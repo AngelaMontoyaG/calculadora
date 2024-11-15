@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="contenedor">
+    <h2>Calculadora</h2>
+    <input class="caja" type="number" id="num1">
+    <input class="caja" type="number" id="num2">
+
+
+    <div id="botones__basicos" onmouseover="ponerBotonesMorados()">
+    <button class="boton" id="sumar" onclick="sumar()">+</button>
+    <button class="boton" onclick="restar()">-</button>
+    <button class="boton" onclick="multiplicar()">X</button>
+    <button class="boton" onclick="dividir()">/</button>
+    </div>
+    <div class ="botones__C">
+    <button class="boton__C" onclick="raiz()">raiz</button>
+    <button class="boton__C" onclick="potenciar()">potencia</button>
+    </div>
+    <div class="botones__C">
+    <button class="boton__C" onclick="absoluto()">absoluto</button>
+    <button class="boton__C" onclick="random()">random</button>
+    </div>
+    <h3>Resultado:</h3>
+    <h2 id="textoResultado"></h2>
+
+    <div id = "botones__Resultado">
+        <button class="boton__Resul" onclick="mostrar__round()">round</button>
+        <button class="boton__Resul" onclick="mostrar__floor()">floor</button>
+        <button class="boton__Resul" onclick="mostrar__ceil()">ceil</button>
+        </div>
+    
+    </div>
+
+</body>
+</html>
